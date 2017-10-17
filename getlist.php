@@ -26,9 +26,8 @@
         
         if ($resultado = $mysqli->query($query)) {
             while ($fila = $resultado->fetch_row()){
-                echo "<p>".$fila[0]."[".$fila[1]."]</p>";
+                echo "<tr><td>".$fila[0]."</td><td>".$fila[1]."</td><td>".$fila[2]."</td><td><i class='fa fa-pencil-square-o' aria-hidden='true'></i> <i class='fa fa-trash' aria-hidden='true'></i></td></tr>";
             }
-            echo "filas ".$resultado->num_rows;
             $resultado->close();        
             }
     }else{

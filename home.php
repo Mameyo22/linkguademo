@@ -30,9 +30,17 @@
 			</ul>
 		</div>
 		<div id="area-datos">
+			<table>
+				<thead>
+					<th>Nombre <i class="fa fa-sort-alpha-asc" ></i>  <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></th>
+					<th>Email <i class="fa fa-sort-alpha-asc" ></i>  <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></th>
+					<th>Mensaje</th>
+					<th>Acciones</th>
+				</thead>
 			<?php
-			include("getlist.php");
+				include("getlist.php");
 			?>
+			</table>
 		</div>
 	</body>
 </html>
