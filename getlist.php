@@ -22,7 +22,7 @@
     $mysqli = new mysqli("localhost", "root", "", "usuarios");
 
     if (!$mysqli->connect_errno){
-        $query = "SELECT * FROM `usuarios`"; //ORDER BY ".$orderby." ".$_SESSION["order"];
+        $query = "SELECT * FROM `usuarios` ORDER BY ".$orderby." ".$order;
         
         if ($resultado = $mysqli->query($query)) {
             while ($fila = $resultado->fetch_row()){

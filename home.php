@@ -23,23 +23,17 @@
 				</li>
 			</ul>
 		</form>
-		<div id="cabecera">
-			<ul>
-				<li><i class="fa fa-sort" aria-hidden="true"></i> Nombre</li>
-				<li><i class="fa fa-sort" aria-hidden="true"></i> Email</li>
-			</ul>
-		</div>
-		<div id="area-datos">
+	<div id="area-datos">
 			<table>
 				<thead>
-					<th>Nombre <i class="fa fa-sort-alpha-asc" ></i>  <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></th>
+					<th>Nombre <span id="NomAsc" <i class="fa fa-sort-alpha-asc" ></i></span><span id="NomDes">  <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></span></th>
 					<th>Email <i class="fa fa-sort-alpha-asc" ></i>  <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></th>
 					<th>Mensaje</th>
 					<th>Acciones</th>
 				</thead>
-			<?php
-				include("getlist.php");
-			?>
+				<tbody id="datos">
+
+				</tbody>
 			</table>
 		</div>
 	</body>

@@ -1,3 +1,27 @@
-ul{
-    
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#area-alta {
+    display: block;
+}
+
+#area-alta ul{
+    list-style: none;
+}
+
+#area-datos table{
+    padding: 10px;
+    border: solid 1px;
+}
+#area-datos th{
+    padding: 5px;
+    border: none;
+    background-color: rgb(0, 132, 255);
+}
+#area-datos td{
+    padding: 10px;
+    background-color: rgb(206, 212, 210);
 }

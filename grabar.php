@@ -20,7 +20,7 @@
                 echo "ok";
             }
         }else{
-            echo "error de conecion";
+            echo "error de conexion";
         }
     }else{
         echo "Sin parametros";
