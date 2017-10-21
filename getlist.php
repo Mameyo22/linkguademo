@@ -11,11 +11,11 @@
     }
     
     //Ver si esta seteada la variable de sesion que indica si el orden es ascendente o descendente
-    if (!isset($_POST["order"])){
+    if (!isset($_POST["orden"])){
         //Por defecto orden ascendente
         $order = "asc";
     }else{
-        $order = $_POST["order"];
+        $order = $_POST["orden"];
     }
 
 
@@ -26,7 +26,7 @@
         
         if ($resultado = $mysqli->query($query)) {
             while ($fila = $resultado->fetch_row()){
-                echo "<tr><td>".$fila[0]."</td><td>".$fila[1]."</td><td>".$fila[2]."</td><td><i class='fa fa-pencil-square-o' aria-hidden='true'></i> <i class='fa fa-trash' aria-hidden='true'></i></td></tr>";
+                echo "<tr><td>".$fila[0]."</td><td>".$fila[1]."</td><td>".$fila[2]."</td><td><button id='e".$fila[3]."' class='editar'>Editar</button> <button id='b".$fila[3]."' class='borrar'>Borrar</button> </td></tr>";
             }
             $resultado->close();        
             }

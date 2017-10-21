@@ -7,10 +7,11 @@
 		<script src="ajax.js"></script>
     </head>
 	<body>
-		<form id="area-alta" method="POST">
+		<div id="area-alta" >
 			<ul>
 				<li>
 					<input type="text" name="nombre" id="nombre" required placeholder="Nombre Completo">
+					<input type="hidden" name="userid" id="userid" value="0">
 				</li>	
 				<li>
 					<input type="email" name="email" id="email" required placeholder="Email">
@@ -19,15 +20,15 @@
                     <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Mensaje"></textarea>
                 </li>
 				<li>
-					<input type="submit" id="grabar" value="grabar" ><input type="reset" value="Limpiar">
+					<button id="grabar">Grabar</button> <input type="reset" id="limpiar" value="Limpiar">
 				</li>
 			</ul>
-		</form>
-	<div id="area-datos">
+		</div>
+		<div id="area-datos">
 			<table>
 				<thead>
 					<th>Nombre <span id="NomAsc" <i class="fa fa-sort-alpha-asc" ></i></span><span id="NomDes">  <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></span></th>
-					<th>Email <i class="fa fa-sort-alpha-asc" ></i>  <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></th>
+					<th>Email  <span id="EmailAsc" <i class="fa fa-sort-alpha-asc" ></i></span><span id="EmailDes">  <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></span></th>
 					<th>Mensaje</th>
 					<th>Acciones</th>
 				</thead>
